@@ -108,3 +108,308 @@ sealedArchetypes.forEach(a => a.cards.forEach(n => {
   [102,'Wysoki koszt; potrzebuje wolnej talii i dobrego graveyardu.'],
   [175,'Każdy atak kosztuje nonland permanent; wymaga fodderu.']
 ].forEach(([n,note]) => addSealedCard(n,'Build-around',note,n === 175 ? ['g9'] : ['h3','g9']));
+
+
+// Dodatkowe przypisania i opisy z notatek użytkownika „Archetypy TRK Limited”.
+// Oddzielne od ocen i odnośników do przewodników PDF.
+const archetypeNotes = [
+  {
+    "archetype": "WU",
+    "number": 83,
+    "note": "statek 3/2; dobiera kartę przy wejściu."
+  },
+  {
+    "archetype": "WU",
+    "number": 44,
+    "note": "removal na tapnięte stworzenie oraz późniejszy latacz 4/4."
+  },
+  {
+    "archetype": "WU",
+    "number": 17,
+    "note": "stworzenie do obsługi Station; licznik albo dobranie karty."
+  },
+  {
+    "archetype": "WU",
+    "number": 9,
+    "note": "tani artifact creature z vigilance; umożliwia jednocześnie atakowanie i używanie Station."
+  },
+  {
+    "archetype": "UB",
+    "number": 73,
+    "note": "główny payoff; dostaje licznik +1/+1 za każde dilemma."
+  },
+  {
+    "archetype": "UB",
+    "number": 51,
+    "note": "elastyczne dilemma: counterspell albo tapowanie, stun counter i karta."
+  },
+  {
+    "archetype": "UB",
+    "number": 125,
+    "note": "removal lub odzyskanie małego artifact creature z grobu."
+  },
+  {
+    "archetype": "UB",
+    "number": 96,
+    "note": "dodatkowa wartość przy opuszczaniu cmentarza; przede wszystkim karta BG, ale może wspierać kontrolną wersję UB."
+  },
+  {
+    "archetype": "WB",
+    "number": 9,
+    "note": "daje wszystkim artifact creatures vigilance."
+  },
+  {
+    "archetype": "WB",
+    "number": 4,
+    "note": "przy wejściu tworzy token 1/1 Borg."
+  },
+  {
+    "archetype": "WB",
+    "number": 92,
+    "note": "daje wszystkim artifact creatures +1/+0."
+  },
+  {
+    "archetype": "WB",
+    "number": 133,
+    "note": "po śmierci pozostawia token 1/1 Borg."
+  },
+  {
+    "archetype": "WB",
+    "number": 2,
+    "note": "może wyszukać z talii pozostałe kopie samego siebie."
+  },
+  {
+    "archetype": "WB",
+    "number": 15,
+    "note": "tani artifact creature, który daje licznik +1/+1."
+  },
+  {
+    "archetype": "WB",
+    "number": 125,
+    "note": "może przywrócić artifact creature o MV 3 lub mniejszym."
+  },
+  {
+    "archetype": "WB",
+    "number": 105,
+    "note": "removal z opcją poświęcenia artefaktu dla efektu −6/−6."
+  },
+  {
+    "archetype": "WB",
+    "number": 124,
+    "note": "artifact creature i źródło karty z cmentarza."
+  },
+  {
+    "archetype": "BR",
+    "number": 173,
+    "note": "haste; po śmierci w swojej turze tworzy Clue."
+  },
+  {
+    "archetype": "BR",
+    "number": 133,
+    "note": "po śmierci tworzy token 1/1 Borg."
+  },
+  {
+    "archetype": "BR",
+    "number": 105,
+    "note": "wykorzystuje stworzenie lub artefakt jako koszt kickera."
+  },
+  {
+    "archetype": "BR",
+    "number": 175,
+    "note": "agresywne 5/3 z menace; po ataku poświęca nonland permanent."
+  },
+  {
+    "archetype": "BR",
+    "number": 125,
+    "note": "usuwa blokera albo odzyskuje małego artifact creature."
+  },
+  {
+    "archetype": "RG",
+    "number": 143,
+    "note": "główny payoff; każdy landfall zadaje obrażenia, a drugi w turze daje jej licznik."
+  },
+  {
+    "archetype": "RG",
+    "number": 193,
+    "note": "tworzą tapnięty token lądu New Planet."
+  },
+  {
+    "archetype": "RG",
+    "number": 198,
+    "note": "wyszukuje basic land albo Planet; może być ponownie zagrany przez Beam me up."
+  },
+  {
+    "archetype": "RG",
+    "number": 213,
+    "note": "po landfallu staje się 6/5; w późnej grze tworzy New Planet."
+  },
+  {
+    "archetype": "RG",
+    "number": 224,
+    "note": "dodatkowa rampa i fixing, choć nie uruchamia landfallu samodzielnie."
+  },
+  {
+    "archetype": "GU",
+    "number": 49,
+    "note": "główny payoff; tworzy dwa tokeny 2/2, dobiera dwie karty i odrzuca jedną."
+  },
+  {
+    "archetype": "GU",
+    "number": 193,
+    "note": "tworzą ląd New Planet."
+  },
+  {
+    "archetype": "GU",
+    "number": 213,
+    "note": "tworzy New Planet w późnej grze i korzysta z kolejnych wejść lądów."
+  },
+  {
+    "archetype": "GU",
+    "number": 198,
+    "note": "wyszukuje basic land albo Planet."
+  },
+  {
+    "archetype": "GU",
+    "number": 224,
+    "note": "rampa oraz fixing do wielokolorowych kart i drogich payoffów."
+  },
+  {
+    "archetype": "GW",
+    "number": 15,
+    "note": "tani generator licznika +1/+1."
+  },
+  {
+    "archetype": "GW",
+    "number": 17,
+    "note": "licznik i vigilance albo dobranie karty, jeśli kontrolujesz permanent z licznikiem."
+  },
+  {
+    "archetype": "GW",
+    "number": 195,
+    "note": "rozdaje licznik; stworzenia z licznikami mają trample."
+  },
+  {
+    "archetype": "GW",
+    "number": 14,
+    "note": "daje licznik, a potem może uratować stworzenie z licznikiem przed zniszczeniem."
+  },
+  {
+    "archetype": "GW",
+    "number": 73,
+    "note": "sam gromadzi liczniki za dilemma."
+  },
+  {
+    "archetype": "GW",
+    "number": 21,
+    "note": "rozdaje licznik podczas ataku po osiągnięciu łącznej siły 8."
+  },
+  {
+    "archetype": "GW",
+    "number": 217,
+    "note": "może kłaść liczniki po wygnaniu kart z cmentarza."
+  },
+  {
+    "archetype": "UR",
+    "number": 76,
+    "note": "dobiera kartę; można zagrać ponownie z grobu."
+  },
+  {
+    "archetype": "UR",
+    "number": 178,
+    "note": "3 obrażenia w dowolny cel; ma Beam me up."
+  },
+  {
+    "archetype": "UR",
+    "number": 52,
+    "note": "rośnie za każdym razem, gdy dobierasz kartę."
+  },
+  {
+    "archetype": "UR",
+    "number": 51,
+    "note": "elastyczny instant oraz dilemma."
+  },
+  {
+    "archetype": "UR",
+    "number": 83,
+    "note": "dobiera kartę przy wejściu i dobrze współpracuje z bounce."
+  },
+  {
+    "archetype": "UR",
+    "number": 198,
+    "note": "efekt rampy możliwy do ponownego zagrania z cmentarza."
+  },
+  {
+    "archetype": "UR",
+    "number": 49,
+    "note": "drogi spell-payoff, ale najlepiej działa dopiero z bazą wielu nazw lądów."
+  },
+  {
+    "archetype": "BG",
+    "number": 124,
+    "note": "może wygnać się z cmentarza, aby dobrać kartę."
+  },
+  {
+    "archetype": "BG",
+    "number": 96,
+    "note": "kopiuje małe stworzenie z grobu; drainuje przeciwnika, gdy karty opuszczają twój cmentarz."
+  },
+  {
+    "archetype": "BG",
+    "number": 217,
+    "note": "surveil 2, a podczas walki może wygnać kartę z grobu i dać licznik."
+  },
+  {
+    "archetype": "BG",
+    "number": 125,
+    "note": "przywraca małego artifact creature z grobu na pole."
+  },
+  {
+    "archetype": "BG",
+    "number": 76,
+    "note": "opuszcza cmentarz przez Beam me up."
+  },
+  {
+    "archetype": "BG",
+    "number": 198,
+    "note": "opuszcza cmentarz przez Beam me up."
+  },
+  {
+    "archetype": "RW",
+    "number": 156,
+    "note": "po spełnieniu warunku uniemożliwia wybranemu stworzeniu blokowanie."
+  },
+  {
+    "archetype": "RW",
+    "number": 21,
+    "note": "podczas ataku rozdaje licznik +1/+1."
+  },
+  {
+    "archetype": "RW",
+    "number": 28,
+    "note": "wydajne 4/3, ale nie może atakować samotnie."
+  },
+  {
+    "archetype": "RW",
+    "number": 175,
+    "note": "5/3 z menace, bardzo szybko wypełnia próg 8 siły."
+  },
+  {
+    "archetype": "RW",
+    "number": 173,
+    "note": "tani atakujący z haste, który pozostawia Clue po śmierci."
+  },
+  {
+    "archetype": "RW",
+    "number": 143,
+    "note": "samodzielne 3/3, które może rosnąć i zadawać obrażenia przez landfall."
+  }
+];
+archetypeNotes.forEach(({archetype, number, note}) => {
+  const key = String(number);
+  if (!sealedEntries.has(key)) addSealedCard(number, 'Wsparcie archetypu', '', []);
+  const entry = sealedEntries.get(key);
+  if (!entry.archetypes.includes(archetype)) entry.archetypes.push(archetype);
+  (entry.archetypeNotes ||= []).push({archetype, note});
+  const group = sealedArchetypes.find(a => a.id === archetype);
+  if (!group.cards.includes(number)) group.cards.push(number);
+});
